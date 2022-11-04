@@ -15,3 +15,11 @@ resource "aws_instance" "web" {
     Name = "airbnb-web-server"
   }
 }
+
+resource "s3_Bucket" "airbnb-s3-bucket" {
+  
+    tags = {
+    Name = "airbnb-s3-bucket"
+  }
+  
+}
